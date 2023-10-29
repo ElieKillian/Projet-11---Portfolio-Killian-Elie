@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from '../../composants/card';
 import Cardproject from '../../composants/cardproject';
 
-function Skills(){
+function Projects(){
 
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);
@@ -10,7 +10,7 @@ function Skills(){
     useEffect(()=>{ 
         const getprojects = async ()=>{
             try{
-                const response = await fetch ('./skills.json');
+                const response = await fetch ('./projects.json');
                 const result = await response.json();
                 console.log('result :', result);
                 setData(result);
@@ -25,15 +25,17 @@ function Skills(){
         <section className="page">
             <Card content={
                 <div className='page__card__container'>
-                    <h2>Mes compétences</h2>
-                    <p>Durant ma formation OpenClassRooms, j'ai pû obtenir diverses compétences, listées ci-dessous :</p>
+                    <h2>Mes réalisations</h2>
+                    <p>Voici les différents projets sur lesquels j'ai été amené à travailler :</p>
                     <div className='page__card__container__import'>
                         { error === false ? (                    
                             data.map((projects) => (
                                 <Cardproject
-                                    key={projects.name} 
+                                    key={projects.id} 
+                                    id = {projects.id}
                                     name={projects.name} 
-                                    icon={projects.icon}
+                                    image={projects.image}
+                                    skills={projects.skills}
                                 />
                             ))
                         ) : (
@@ -46,4 +48,4 @@ function Skills(){
     )
 };
 
-export default Skills;
+export default Projects;

@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.scss';
 // pages
 import Home from './pages/home';
-import About from './pages/about';
+import Project from './pages/project';
+import Projects from './pages/projects';
 import Skills from './pages/skills';
 import Contact from './pages/contact';
 import Notfound from './pages/notfound';
@@ -24,8 +25,9 @@ ReactDOM.createRoot(rootElement).render(
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/aboutme' element={<About />} />
           <Route path='/skills' element={<Skills />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/:id' element={<Project />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/404' element={<Notfound />} />
         </Routes>

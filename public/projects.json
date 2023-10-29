@@ -1,0 +1,156 @@
+[
+    {
+        "id" : "01",
+        "title" : "Premiers pas sur le langage HTML", 
+        "name" : "Riding Cities",
+        "objectives" : [
+            "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML"
+        ],
+        "github" : "https://github.com/ElieKillian/site-Riding-Citites",
+        "image" :  "projet1.png",
+        "skills" : [ 
+            "./icones/html.webp"
+        ]
+    },
+    {
+        "id" : "02",
+        "title" : "Créer la page d'accueil d'une agence de voyage avec HTML & CSS", 
+        "name" : "Booki",
+        "objectives" : [
+            "Implémenter une interface responsive avec HTML et CSS",
+            "Installer un environnement de développement front-end",
+            "Intégrer du contenu conformément à une maquette avec HTML et CSS"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-3",
+        "image" : "projet2.png",
+        "skills" : [ 
+            "./icones/html.webp",
+            "./icones/css.webp"
+        ]
+    },    
+    {
+        "id" : "03",
+        "title" : "Améliorer l'interface d'un site mobile avec des animations CSS", 
+        "name" : "Ohmyfood",
+        "objectives" : [
+            "Intégrer une maquette en mobile-first",
+            "Mettre en œuvre des animations CSS",
+            "Versionner son projet avec Git et Github"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-4",
+        "image" : "projet3.png",
+        "skills" : [ 
+            "./icones/html.webp",
+            "./icones/css.webp",
+            "./icones/sass.webp",
+            "./icones/github.png"
+        ]
+    },   
+    {
+        "id" : "04",
+        "title" : "Premiers pas sur le langage JavaScript", 
+        "name" : "Print it",
+        "objectives" : [
+            "Programmer en utilisant les fondamentaux de JavaScript"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-5---Print-It-JS",
+        "image" : "projet4.png",
+        "skills" : [ 
+            "./icones/javascript.webp",
+            "./icones/github.png"
+        ]
+    },    
+    {
+        "id" : "05",
+        "title" : "Créer une page web dynamique avec JavaScript", 
+        "name" : "Sophie Bluel",
+        "objectives" : [
+            "Gérer les événements utilisateurs avec JavaScript",
+            "Manipuler les éléments du DOM avec JavaScript",
+            "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-6",
+        "image" : "projet5.png",
+        "skills" : [ 
+            "./icones/html.webp",
+            "./icones/css.webp",
+            "./icones/javascript.webp",
+            "./icones/swagger.png",
+            "./icones/github.png"
+        ]
+    },    
+    {
+        "id" : "06",
+        "title" : "Créer une application web de location immobilière avec React", 
+        "name" : "Kasa",
+        "objectives" : [
+            "Mettre en œuvre des animations CSS",
+            "Développer une interface web avec Sass",
+            "Configurer la navigation entre les pages de l'application avec React Router",
+            "Développer des éléments de l'interface d'un site web grâce à des composants React",
+            "Initialiser une application avec Create React App"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-8",
+        "image" : "projet6.png",
+        "skills" : [ 
+            "./icones/html.webp",
+            "./icones/css.webp",
+            "./icones/sass.webp",
+            "./icones/github.png",
+            "./icones/react.webp"
+        ]
+    },    
+    {
+        "id" : "07",
+        "title" : "Optimiser le référencement d'un site de photographe", 
+        "name" : "Nina Carducci",
+        "objectives" : [
+            "Optimiser la performance d'un site web"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-9",
+        "image" : "projet7.webp",
+        "skills" : [ 
+            "./icones/html.webp",
+            "./icones/css.webp",
+            "./icones/lighthouse.webp",
+            "./icones/github.png"
+        ]
+    },    
+    {
+        "id" : "08",
+        "title" : "Débugger le site d'une agence d'événementiel", 
+        "name" : "724 events",
+        "objectives" : [
+            "Débugger un site web grâce aux Chrome DevTools",
+            "Rédiger un cahier de recette pour tester un site"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-10",
+        "image" : "projet8.png",
+        "skills" : [ 
+            "./icones/html.webp",
+            "./icones/css.webp",
+            "./icones/react.webp"
+        ]
+    },    
+    {
+        "id" : "09",
+        "title" : "Implémenter le front-end d'une application bancaire avec React", 
+        "name" : "Argent Bank",
+        "objectives" : [
+            "Afficher les données du back end sur l'interface via des appels API",
+            "Configurer des routes API pour la communication client / serveur",
+            "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+        ],
+        "github" : "https://github.com/ElieKillian/Projet-11",
+        "image" : "projet9.avif",
+        "skills" : [ 
+            "./icones/html.webp",
+            "./icones/css.webp",
+            "./icones/sass.webp",
+            "./icones/swagger.png",
+            "./icones/github.png",
+            "./icones/react.webp",
+            "./icones/redux.webp"
+        ]
+    }
+]

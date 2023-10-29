@@ -27,8 +27,8 @@ function Header(){
             </div>
             <nav className="header__right">
                 <Link to='/' className="header__right__link">Accueil</Link>
-                <Link to='/aboutme' className="header__right__link">Biographie</Link>
-                <Link to='/skills' className="header__right__link">Compétences & Réalisations</Link>
+                <Link to='/skills' className="header__right__link">Compétences</Link>
+                <Link to='/projects' className="header__right__link">Réalisations</Link>
                 <Link to='/contact' className="header__right__link">Contact</Link>
             </nav>
         </header>

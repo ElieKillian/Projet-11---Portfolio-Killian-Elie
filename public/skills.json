@@ -1,0 +1,42 @@
+[
+    {
+        "name" : "HTML 5",
+        "icon" : "./icones/html.webp"
+    },
+    {
+        "name" : "CSS 3",
+        "icon" : "./icones/css.webp"
+    },
+    {
+        "name" : "Sass",
+        "icon" : "./icones/sass.webp"
+    },    
+    {
+        "name" : "Javascript",
+        "icon" : "./icones/javascript.webp"
+    },    
+    {
+        "name" : "Swagger",
+        "icon" : "./icones/swagger.png"
+    },   
+    {
+        "name" : "Github",
+        "icon" : "./icones/github.png"
+    },    
+    {
+        "name" : "React",
+        "icon" : "./icones/react.webp"
+    },
+    {
+        "name" : "Redux",
+        "icon" : "./icones/redux.webp"
+    },
+    {
+        "name" : "Figma",
+        "icon" : "./icones/figma.png"
+    },
+    {
+        "name" : "Google Lighthouse",
+        "icon" : "./icones/lighthouse.webp"
+    }
+]

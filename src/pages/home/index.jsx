@@ -2,11 +2,13 @@ import photo from './photo.jpg';
 import github from './github.png';
 import lkn from './lkn.png';
 import { Link } from 'react-router-dom';
+import Card from '../../composants/card'
 
 function Home(){
     return(
         <section className="page">
-            <div className='page__card'>
+            <Card content={
+                <>
                 <img src={photo} alt='Killian Elie' className='page__card__photo' />
                 <div className='page__card__right'>
                     <div className='page__card__right__title'>
@@ -17,8 +19,9 @@ function Home(){
                         Vous trouverez donc sur ce site les diverses compétences que j'ai obtenues pendant la formation d'OpenClassRooms, ainsi que les diverses réalisations que j'ai crée.
                     </p>
                 </div>
-            </div>
-            <div className='page__card'>
+                </>
+            } />
+            <Card content={
                 <div className='page__card__social'>
                     <div className='page__card__social__github'>
                         <p>Mon Github :</p>
@@ -33,7 +36,7 @@ function Home(){
                         </Link>
                     </div>
                 </div>
-            </div>
+            } />
         </section>
     )
 
