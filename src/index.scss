@@ -21,7 +21,8 @@ body{
   justify-content: space-between;
   background-image: url(./background.jpg);
   background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 a{
   text-decoration: none;
