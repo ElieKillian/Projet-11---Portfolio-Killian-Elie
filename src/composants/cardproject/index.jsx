@@ -12,7 +12,7 @@ function Cardproject(projects){
             </div>
             <h3>{projects.name}</h3>
             {projects.id ? (
-                <Link to={`/${projects.id}`} className="cardproject__button">
+                <Link to={`/projects/${projects.id}`} className="cardproject__button">
                     Voir le projet
                 </Link>
             ):(

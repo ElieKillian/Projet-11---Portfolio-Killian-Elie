@@ -7,7 +7,7 @@
             "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML"
         ],
         "github" : "https://github.com/ElieKillian/site-Riding-Citites",
-        "image" :  "projet1.png",
+        "image" :  "./projets/projet1.png",
         "skills" : [ 
             "./icones/html.webp"
         ]
@@ -22,7 +22,7 @@
             "Intégrer du contenu conformément à une maquette avec HTML et CSS"
         ],
         "github" : "https://github.com/ElieKillian/Projet-3",
-        "image" : "projet2.png",
+        "image" : "./projets/projet2.png",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp"
@@ -38,7 +38,7 @@
             "Versionner son projet avec Git et Github"
         ],
         "github" : "https://github.com/ElieKillian/Projet-4",
-        "image" : "projet3.png",
+        "image" : "./projets/projet3.png",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -54,7 +54,7 @@
             "Programmer en utilisant les fondamentaux de JavaScript"
         ],
         "github" : "https://github.com/ElieKillian/Projet-5---Print-It-JS",
-        "image" : "projet4.png",
+        "image" : "./projets/projet4.png",
         "skills" : [ 
             "./icones/javascript.webp",
             "./icones/github.png"
@@ -70,7 +70,7 @@
             "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
         ],
         "github" : "https://github.com/ElieKillian/Projet-6",
-        "image" : "projet5.png",
+        "image" : "./projets/projet5.png",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -91,7 +91,7 @@
             "Initialiser une application avec Create React App"
         ],
         "github" : "https://github.com/ElieKillian/Projet-8",
-        "image" : "projet6.png",
+        "image" : "./projets/projet6.png",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -108,7 +108,7 @@
             "Optimiser la performance d'un site web"
         ],
         "github" : "https://github.com/ElieKillian/Projet-9",
-        "image" : "projet7.webp",
+        "image" : "./projets/projet7.webp",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -125,7 +125,7 @@
             "Rédiger un cahier de recette pour tester un site"
         ],
         "github" : "https://github.com/ElieKillian/Projet-10",
-        "image" : "projet8.png",
+        "image" : "./projets/projet8.png",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -142,7 +142,7 @@
             "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
         ],
         "github" : "https://github.com/ElieKillian/Projet-11",
-        "image" : "projet9.avif",
+        "image" : "./projets/projet9.avif",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",

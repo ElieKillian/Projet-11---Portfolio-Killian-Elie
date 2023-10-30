@@ -14,7 +14,7 @@ function Project(){
     useEffect(()=>{
         const getprojects = async ()=>{
             try{
-                const response = await fetch ('./projects.json');
+                const response = await fetch ('../projects.json');
                 const result = await response.json();
                 const dataProject = result.find(item => item.id === id);
                 setData(dataProject);                    
@@ -32,7 +32,7 @@ function Project(){
                 <div className='page__card__container'>
                     { error === false || data !== undefined ? (
                         <div className='page__card__container__project'>
-                            <img src={data.image} className='page__card__container__project__head' alt='projet' />
+                            <img src={'.' + data.image} className='page__card__container__project__head' alt='projet' />
                             <h2 className='page__card__container__project__name'>Projet {data.name}</h2>
                             <h3 className='page__card__container__project__name'>
                                 {data.title}
@@ -51,6 +51,7 @@ function Project(){
                                     null
                                 )}
                             </div>
+                            {/* <iframe title={data.name} src="https://github.com/ElieKillian/Projet-3"></iframe> */}
                             <Link to={data.github} target="_blank" className='page__card__container__project__link'>
                                 Lien vers le projet sur Github
                             </Link>
@@ -62,7 +63,7 @@ function Project(){
                                 <div className='page__card__container__project__skills__images'> 
                                     { data.skills  ? (
                                         data.skills.map((item, index) => (
-                                            <img key={index} src={item} alt='projet' />
+                                            <img key={index} src={'.' + item} alt='projet' />
                                         ))
                                     ):(
                                         null
