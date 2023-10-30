@@ -2,6 +2,9 @@ import { useState } from "react";
 import emailjs from 'emailjs-com';
 
 function Contact(){
+
+    document.title = 'Me contacter';
+
     const [formData, setFormData] = useState({
         nom: '',
         prenom: '',

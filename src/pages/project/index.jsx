@@ -9,6 +9,8 @@ function Project(){
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);
 
+    document.title = data.name;
+
     useEffect(()=>{
         const getprojects = async ()=>{
             try{

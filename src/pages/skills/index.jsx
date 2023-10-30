@@ -4,6 +4,8 @@ import Cardproject from '../../composants/cardproject';
 
 function Skills(){
 
+    document.title = 'Mes compétences';
+
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);
 
@@ -29,11 +31,11 @@ function Skills(){
                     <p>Durant ma formation OpenClassRooms, j'ai pû obtenir diverses compétences, listées ci-dessous :</p>
                     <div className='page__card__container__import'>
                         { error === false ? (                    
-                            data.map((projects) => (
+                            data.map((skills) => (
                                 <Cardproject
-                                    key={projects.name} 
-                                    name={projects.name} 
-                                    icon={projects.icon}
+                                    key={skills.name} 
+                                    name={skills.name} 
+                                    icon={skills.icon}
                                 />
                             ))
                         ) : (

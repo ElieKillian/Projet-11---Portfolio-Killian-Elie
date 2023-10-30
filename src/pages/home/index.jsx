@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import Card from '../../composants/card'
 
 function Home(){
+
+    document.title = 'Accueil';
+
     return(
         <section className="page">
             <Card content={
