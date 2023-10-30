@@ -6,7 +6,7 @@ import Card from '../../composants/card'
 
 function Home(){
 
-    document.title = 'Accueil';
+    document.title = 'Accueil - Killian Elie';
 
     return(
         <section className="page">

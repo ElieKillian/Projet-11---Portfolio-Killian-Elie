@@ -4,7 +4,7 @@ import Cardproject from '../../composants/cardproject';
 
 function Skills(){
 
-    document.title = 'Mes compétences';
+    document.title = 'Mes compétences - Killian Elie';
 
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);

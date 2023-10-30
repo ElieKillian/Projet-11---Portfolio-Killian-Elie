@@ -9,7 +9,7 @@ function Project(){
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);
 
-    document.title = data.name;
+    document.title = data.name + ' - Killian Elie';
 
     useEffect(()=>{
         const getprojects = async ()=>{

@@ -4,7 +4,7 @@ import Cardproject from '../../composants/cardproject';
 
 function Projects(){
 
-    document.title = 'Mes projets réalisés';
+    document.title = 'Mes projets réalisés - Killian Elie';
 
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);

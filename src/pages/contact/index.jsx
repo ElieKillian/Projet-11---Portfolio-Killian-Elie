@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 
 function Contact(){
 
-    document.title = 'Me contacter';
+    document.title = 'Me contacter - Killian Elie';
 
     const [formData, setFormData] = useState({
         nom: '',
