@@ -147,6 +147,13 @@ footer{
       width: 100%;
       height: 20vh;
 
+      h3{
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding : 5px 10px;
+        opacity: 0.9;
+      }
+
       &__github{
         display: flex;
         flex-direction: column;
@@ -220,6 +227,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        // background-color: var(--white-color);
         width: 100%;
         gap : 50px;
 
@@ -231,47 +239,61 @@ footer{
           margin-top : 50px;
         }
 
-        &__name{
-          color : var(--main-color);
-          margin : 0;
-        }
+        &__content{
 
-        &__objectives{
           display: flex;
           flex-direction: column;
-          justify-content: left;
-          margin : 0;
-        }
-
-        &__link{
-          display: flex;
-          justify-content: center;
           align-items: center;
           background-color: var(--main-bg-color);
-          margin: 0;
-          border: 1px solid;
-          border-radius: 10px;
-          padding : 5px 10px;
-          width: 30%;
-          font-size: large;
+          opacity: 0.9;
+          border-radius: 20px;
+          width: 70%;
+          padding : 5%;
+          gap : 50px;
 
-          &:hover{
-            border: 1px solid var(--main-color);
-            color: var(--main-color);
-            background-color: var(--filter-bg-color);
+          &__name{
+            color : var(--main-color);
+            margin : 0;
           }
-        }
 
-        &__skills{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          &__objectives{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            margin : 0;
+          }
 
-          &__images{
+          &__link{
             display: flex;
             justify-content: center;
-            height: 64px;
-            gap : 20px;
+            align-items: center;
+            background-color: var(--main-bg-color);
+            margin: 0;
+            border: 1px solid;
+            border-radius: 10px;
+            padding : 5px 10px;
+            width: 30%;
+            font-size: large;
+
+            &:hover{
+              scale: 1.2;
+              border: 1px solid var(--main-color);
+              color: var(--main-color);
+              background-color: var(--filter-bg-color);
+            }
+          }
+
+          &__skills{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__images{
+              display: flex;
+              justify-content: center;
+              height: 64px;
+              gap : 20px;
+            }
           }
         }
       }

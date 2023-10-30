@@ -33,41 +33,43 @@ function Project(){
                     { error === false || data !== undefined ? (
                         <div className='page__card__container__project'>
                             <img src={'.' + data.image} className='page__card__container__project__head' alt='projet' />
-                            <h2 className='page__card__container__project__name'>Projet {data.name}</h2>
-                            <h3 className='page__card__container__project__name'>
-                                {data.title}
-                            </h3>
-                            <div className='page__card__container__project__objectives'>
-                                {data.objectives ? (
-                                    <p>{data.objectives.length > 1 ? 'Objectifs du projet :' : 'Objectif du projet :'}</p>
-                                ) : (
-                                    null
-                                )}
-                                { data.objectives  ? (
-                                    data.objectives.map((item, index) => (
-                                        <p key={index}>- {item}</p>
-                                    ))
-                                ):(
-                                    null
-                                )}
-                            </div>
-                            {/* <iframe title={data.name} src="https://github.com/ElieKillian/Projet-3"></iframe> */}
-                            <Link to={data.github} target="_blank" className='page__card__container__project__link'>
-                                Lien vers le projet sur Github
-                            </Link>
-                            <Link to='/projects' className='page__card__container__project__link'>
-                                Retour page projets
-                            </Link>
-                            <div className='page__card__container__project__skills'>
-                                <p>Compétences utilisées dans ce projet :</p>
-                                <div className='page__card__container__project__skills__images'> 
-                                    { data.skills  ? (
-                                        data.skills.map((item, index) => (
-                                            <img key={index} src={'.' + item} alt='projet' />
+                            <div className='page__card__container__project__content'>
+                                <h2 className='page__card__container__project__content__name'>Projet {data.name}</h2>
+                                <h3 className='page__card__container__project__content__name'>
+                                    {data.title}
+                                </h3>
+                                <div className='page__card__container__project__content__objectives'>
+                                    {data.objectives ? (
+                                        <p>{data.objectives.length > 1 ? 'Objectifs du projet :' : 'Objectif du projet :'}</p>
+                                    ) : (
+                                        null
+                                    )}
+                                    { data.objectives  ? (
+                                        data.objectives.map((item, index) => (
+                                            <p key={index}>- {item}</p>
                                         ))
                                     ):(
                                         null
                                     )}
+                                </div>
+                                {/* <iframe title={data.name} src="https://github.com/ElieKillian/Projet-3"></iframe> */}
+                                <Link to={data.github} target="_blank" className='page__card__container__project__content__link'>
+                                    Lien vers le projet sur Github
+                                </Link>
+                                <Link to='/projects' className='page__card__container__project__content__link'>
+                                    Retour page projets
+                                </Link>
+                                <div className='page__card__container__project__content__skills'>
+                                    <p>Compétences utilisées dans ce projet :</p>
+                                    <div className='page__card__container__project__content__skills__images'> 
+                                        { data.skills  ? (
+                                            data.skills.map((item, index) => (
+                                                <img key={index} src={'.' + item} alt='projet' />
+                                            ))
+                                        ):(
+                                            null
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </div>

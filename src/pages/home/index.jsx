@@ -27,13 +27,13 @@ function Home(){
             <Card content={
                 <div className='page__card__social'>
                     <div className='page__card__social__github'>
-                        <p>Mon Github :</p>
+                        <h3>Mon Github :</h3>
                         <Link to="https://github.com/ElieKillian" target="_blank" className='page__card__social__github__icon'>
                             <img src={github} alt="GitHub Killian Elie" />
                         </Link>
                     </div>
                     <div className='page__card__social__linkedin'>
-                        <p>Mon compte Linkedin :</p>
+                        <h3>Mon compte Linkedin :</h3>
                         <Link to="https://www.linkedin.com/in/killian-elie-627b57184/" target="_blank" className='page__card__social__linkedin__icon'>
                             <img src={lkn} alt="Linkedin Killian Elie" />
                         </Link>
