@@ -13,6 +13,8 @@ function Contact(){
         message: '',
     });
 
+    const [send, setSend] = useState(false);
+
     const Submit = (e) => {
         e.preventDefault();
 
@@ -41,6 +43,7 @@ function Contact(){
                     email: '',
                     message: '',
                 });
+                setSend(true);
             }, function (error) {
                 console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
             });
@@ -76,6 +79,7 @@ function Contact(){
                             <textarea name="message" rows="5" cols="10" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} required />
                         </div>
                         <button className="page__card__container__form__button" onClick={Submit} >Envoyer</button>
+                        { send === true ? (<p>Votre message a bien été envoyé !</p>) : (null)}
                     </form>
                 </div>
             </div>
