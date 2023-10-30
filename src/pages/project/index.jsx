@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Card from '../../composants/card';
+import Notfound from '../notfound';
 
 function Project(){
 
     const { id } = useParams();
     
     const [data, setData] = useState([]);
+    const [load, setLoad] =useState(true);
     const [error, setError] = useState(false);
 
     document.title = data.name + ' - Killian Elie';
@@ -16,8 +18,8 @@ function Project(){
             try{
                 const response = await fetch ('../projects.json');
                 const result = await response.json();
-                const dataProject = result.find(item => item.id === id);
-                setData(dataProject);                    
+                setData(result); 
+                setLoad(false);
             } catch {
                 setError(true);
             }
@@ -25,27 +27,36 @@ function Project(){
         getprojects();
     },[id])
 
+    const dataProject = data.find(item => item.id === id);
+
+    if (!dataProject){
+        if(load){
+          return null
+        } else {
+          return <Notfound />
+        }
+      }
 
     return(
         <section className="page">
             <Card content={
                 <div className='page__card__container'>
-                    { error === false || data !== undefined ? (
+                    { error === false || dataProject !== undefined ? (
                         <div className='page__card__container__project'>
-                            <img src={'.' + data.image} className='page__card__container__project__head' alt='projet' />
+                            <img src={'.' + dataProject.image} className='page__card__container__project__head' alt='projet' />
                             <div className='page__card__container__project__content'>
-                                <h2 className='page__card__container__project__content__name'>Projet {data.name}</h2>
+                                <h2 className='page__card__container__project__content__name'>Projet {dataProject.name}</h2>
                                 <h3 className='page__card__container__project__content__name'>
-                                    {data.title}
+                                    {dataProject.title}
                                 </h3>
                                 <div className='page__card__container__project__content__objectives'>
-                                    {data.objectives ? (
-                                        <p>{data.objectives.length > 1 ? 'Objectifs du projet :' : 'Objectif du projet :'}</p>
+                                    {dataProject.objectives ? (
+                                        <p>{dataProject.objectives.length > 1 ? 'Objectifs du projet :' : 'Objectif du projet :'}</p>
                                     ) : (
                                         null
                                     )}
-                                    { data.objectives  ? (
-                                        data.objectives.map((item, index) => (
+                                    { dataProject.objectives  ? (
+                                        dataProject.objectives.map((item, index) => (
                                             <p key={index}>- {item}</p>
                                         ))
                                     ):(
@@ -53,7 +64,7 @@ function Project(){
                                     )}
                                 </div>
                                 {/* <iframe title={data.name} src="https://github.com/ElieKillian/Projet-3"></iframe> */}
-                                <Link to={data.github} target="_blank" className='page__card__container__project__content__link'>
+                                <Link to={dataProject.github} target="_blank" className='page__card__container__project__content__link'>
                                     Lien vers le projet sur Github
                                 </Link>
                                 <Link to='/projects' className='page__card__container__project__content__link'>
@@ -62,8 +73,8 @@ function Project(){
                                 <div className='page__card__container__project__content__skills'>
                                     <p>Compétences utilisées dans ce projet :</p>
                                     <div className='page__card__container__project__content__skills__images'> 
-                                        { data.skills  ? (
-                                            data.skills.map((item, index) => (
+                                        { dataProject.skills  ? (
+                                            dataProject.skills.map((item, index) => (
                                                 <img key={index} src={'.' + item} alt='projet' />
                                             ))
                                         ):(

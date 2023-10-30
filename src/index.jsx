@@ -29,7 +29,7 @@ ReactDOM.createRoot(rootElement).render(
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/:id' element={<Project />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/404' element={<Notfound />} />
+          <Route path='/*' element={<Notfound />} />
         </Routes>
         </div>
         <Footer />
