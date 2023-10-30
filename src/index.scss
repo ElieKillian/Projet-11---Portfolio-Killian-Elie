@@ -14,6 +14,7 @@ body{
 }
 #root {
   width: 100%;
+  min-width: 360px;
 }
 .router{
   display: flex;
@@ -45,9 +46,17 @@ a:visited{
     border-radius: 10px;
     padding : 5px 10px;
 
+    @media all and (max-width:720px){
+      padding: 0;
+    }
+
     h1, p{
       margin : 0;
       color: var(--black-color);
+
+      @media all and (max-width:720px){
+        font-size: x-large;
+      }
     }
   }
 
@@ -55,6 +64,12 @@ a:visited{
     display: flex;
     gap : 25px;
     margin : 40px 20px;
+
+    @media all and (max-width:720px){
+      margin : 20px;
+      flex-direction: column;
+      gap : 10px;
+    }
 
     &__link{      
       display: flex;
@@ -77,6 +92,17 @@ a:visited{
 footer{
   display: flex;
   justify-content: center;
+  background-color: var(--main-bg-color);
+  opacity: 0.9;
+  margin: auto;
+  margin-bottom : 20px; 
+  width: auto;
+  padding : 0 5px;
+  border-radius: 20px;
+
+  p{
+    margin : 0;
+  }
 }
 
 // Pages
@@ -106,17 +132,31 @@ footer{
 
     display: flex;
     margin: 5% 10%;
-    // background-color: var(--white-color);
-    background-color: transparent;
+    opacity: 0.9;
+    background-color: var(--main-bg-color);
+    // background-color: transparent;
     box-shadow: 0 3px 15px 0 rgba(0,0,0,0.1);
     border-radius: 20px;
 
+    @media all and (max-width:720px){
+      flex-direction: column;
+
+    }
+
     &__photo{
-      height: 20vh;
+      width: 20%;
       margin : 10px 0 10px 10px;
       border-radius: 20px 0 0 20px;
       background-color: var(--white-color);
       object-fit: cover;
+
+      @media all and (max-width:720px){
+        width: 90%;
+        height: 200px;
+        margin : 10px 5% 0 5%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+      }
     }
 
     &__right{
@@ -129,6 +169,10 @@ footer{
       // background-color: var(--white-color); 
       background-color: transparent;
 
+      @media all and (max-width:1024px){
+        margin : 10px auto;
+      }
+
       h2, h3, p{
         display: flex;
         justify-content: flex-start;
@@ -136,7 +180,7 @@ footer{
       }
 
       h3{
-        color: var(--grey-color);
+        color: var(--main-color);
       }
     }
 
@@ -145,12 +189,17 @@ footer{
       align-items: center;
       margin: auto;
       width: 100%;
-      height: 20vh;
+      padding: 25px 0;
+
+      @media all and (max-width:720px){
+        flex-direction: column;
+      }
 
       h3{
         background-color: var(--main-bg-color);
         border-radius: 20px;
         padding : 5px 10px;
+        margin : 0;
         opacity: 0.9;
       }
 
@@ -162,6 +211,12 @@ footer{
         width: 50%;
         height: 80%;
         border-right: 1px solid var(--main-color);
+
+        @media all and (max-width:720px){
+          border-right: none;
+          border-bottom: 1px solid var(--main-color);
+          padding : 5% 0;
+        }
 
         &__icon{
           object-fit: cover;
@@ -181,6 +236,10 @@ footer{
         align-items: center;
         width: 50%;
         height: 80%;
+
+        @media all and (max-width:720px){
+          padding : 5% 0;
+        }
 
         &__icon{
           object-fit: cover;
@@ -214,12 +273,30 @@ footer{
         }
       }
 
+      @media all and (max-width:720px){
+        gap : 5px;
+      }
+
+      h2, p{
+        @media all and (max-width:1024px){
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+
       &__import{
         display: grid;
         justify-content: center;
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
-        // gap : 5%;
+
+        @media all and (max-width:1024px){
+          grid-template-columns: 1fr 1fr;
+        }
+
+        @media all and (max-width:720px){
+          grid-template-columns: 1fr;
+        }
       }
 
       &__project{
@@ -272,7 +349,7 @@ footer{
             border: 1px solid;
             border-radius: 10px;
             padding : 5px 10px;
-            width: 30%;
+            width: 80%;
             font-size: large;
 
             &:hover{
@@ -293,6 +370,15 @@ footer{
               justify-content: center;
               height: 64px;
               gap : 20px;
+              
+              img{
+                height: 64px;
+              }
+
+              @media all and (max-width:720px){
+                height: auto;
+                scale: 0.4;
+              }              
             }
           }
         }
@@ -307,6 +393,11 @@ footer{
         border-radius: 20px;
         padding: 20px;
         gap : 20px;
+
+        
+        @media all and (max-width:720px){
+          width: 70%;
+        }
 
         &__partname{
           display: flex;
@@ -425,4 +516,11 @@ footer{
     height: 32px;
     }
   }
+}
+
+// mobile : 
+@media all and (max-width:720px){
+}
+// tablette : 
+@media all and (max-width:1024px){
 }
