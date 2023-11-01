@@ -5,13 +5,14 @@ import Notfound from '../notfound';
 
 function Project(){
 
-    const { id } = useParams();
+    document.title = ' Projet réalisé - Killian Elie';
     
+    const { id } = useParams();    
     const [data, setData] = useState([]);
     const [load, setLoad] =useState(true);
     const [error, setError] = useState(false);
 
-    document.title = data.name + ' - Killian Elie';
+    // document.title = dataProject.name + ' - Killian Elie'
 
     useEffect(()=>{
         const getprojects = async ()=>{
@@ -28,7 +29,7 @@ function Project(){
     },[id])
 
     const dataProject = data.find(item => item.id === id);
-
+    
     if (!dataProject){
         if(load){
           return null
@@ -63,13 +64,25 @@ function Project(){
                                         null
                                     )}
                                 </div>
-                                {/* <iframe title={data.name} src="https://github.com/ElieKillian/Projet-3"></iframe> */}
-                                <Link to={dataProject.github} target="_blank" className='page__card__container__project__content__link'>
-                                    Lien vers le projet sur Github
-                                </Link>
-                                <Link to='/projects' className='page__card__container__project__content__link'>
-                                    Retour page projets
-                                </Link>
+                                <div className='page__card__container__project__content__links' >
+                                    { dataProject.website ? (
+                                        <>
+                                        {/* <iframe title={data.name} className='page__card__container__project__content__website' src={dataProject.website}>
+                                        </iframe> */}
+                                        <Link to={dataProject.website} target="_blank" className='page__card__container__project__content__links__link'>
+                                            Lien vers le site
+                                        </Link>
+                                        </>
+                                    ):(
+                                        null
+                                    )}
+                                    <Link to={dataProject.github} target="_blank" className='page__card__container__project__content__links__link'>
+                                        Lien vers le code (Github)
+                                    </Link>
+                                    <Link to='/projects' className='page__card__container__project__content__links__link'>
+                                        Retour page projets
+                                    </Link>
+                                </div>
                                 <div className='page__card__container__project__content__skills'>
                                     <p>Compétences utilisées dans ce projet :</p>
                                     <div className='page__card__container__project__content__skills__images'> 
