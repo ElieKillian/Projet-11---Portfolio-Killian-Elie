@@ -4,11 +4,8 @@ function Cardproject(projects){
     return(
         <div className="cardproject">
             <div className='cardproject__head'>
-                {projects.image ? (
-                    <img className='cardproject__head__image' src={projects.image} alt='projet' />
-                ):(
-                    <img className='cardproject__head__icon' src={projects.icon} alt='skill' />
-                )}
+                {projects.image ? (<img className='cardproject__head__image' src={projects.image} alt='projet' />):(null)}
+                {projects.icon ? (<img className='cardproject__head__icon' src={projects.icon} alt='skill' />):(null)}
             </div>
             <h3>{projects.name}</h3>
             {projects.id ? (

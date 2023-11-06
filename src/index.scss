@@ -312,6 +312,21 @@ footer{
           grid-template-columns: 1fr;
         }
       }
+              
+      &__importText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+
+        @media all and (max-width:720px){
+          width: 80%;
+        }
+
+        @media all and (max-width:1024px){
+          width: 60%;
+        }
+      }
 
       &__project{
 
@@ -351,7 +366,18 @@ footer{
             display: flex;
             flex-direction: column;
             justify-content: left;
+            width: 100%;
             margin : 0;
+            
+            p{
+              display: flex;
+              justify-content: center;
+            }
+
+            &__title{
+              display: flex;
+              justify-content: center;
+            }
           }
 
           &__website{
@@ -501,6 +527,11 @@ footer{
     overflow: hidden;
     height: 50px;
     margin : 0;
+
+    @media all and (max-width:720px){
+        scale : 0.8;
+        overflow:visible;
+    }
   }
 
   &__head{

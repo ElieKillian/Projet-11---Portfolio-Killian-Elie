@@ -52,7 +52,7 @@ function Project(){
                                 </h3>
                                 <div className='page__card__container__project__content__objectives'>
                                     {dataProject.objectives ? (
-                                        <p>{dataProject.objectives.length > 1 ? 'Objectifs du projet :' : 'Objectif du projet :'}</p>
+                                        <p className='page__card__container__project__content__objectives__title'>{dataProject.objectives.length > 1 ? 'Objectifs du projet :' : 'Objectif du projet :'}</p>
                                     ) : (
                                         null
                                     )}
@@ -63,6 +63,16 @@ function Project(){
                                     ):(
                                         null
                                     )}
+                                </div>
+                                <div className='page__card__container__project__content__objectives'>
+                                    <p className='page__card__container__project__content__objectives__title'>Ma contribution à ce projet :</p>
+                                        {dataProject.contribution ? (
+                                            dataProject.contribution.map((item, index) => (
+                                                <p key={index}>- {item}</p>
+                                            ))
+                                        ) : (
+                                            null
+                                        )}
                                 </div>
                                 <div className='page__card__container__project__content__links' >
                                     { dataProject.website ? (

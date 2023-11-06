@@ -1,4 +1,5 @@
-[
+{
+    "icons" : [         
     {
         "name" : "HTML 5",
         "icon" : "./icones/html.webp"
@@ -39,4 +40,28 @@
         "name" : "Google Lighthouse",
         "icon" : "./icones/lighthouse.webp"
     }
-]
+    ],
+    "noIcons" : [
+        {
+            "name" : "Découper une maquette"
+        },
+        {
+            "name": "Faire une veille"
+        },
+        {
+            "name" : "Utiliser/Fabriquer un kanban"
+        },
+        {
+            "name" : "Rédiger des spécifications techniques"
+        },
+        {
+            "name" : "Présenter une solution technique"
+        },
+        {
+            "name" : "Optimiser un site"
+        },
+        {
+            "name" : "Rédiger un cahier de recettes"
+        }
+    ]
+}
