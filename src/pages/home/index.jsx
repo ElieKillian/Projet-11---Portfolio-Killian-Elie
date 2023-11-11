@@ -1,4 +1,4 @@
-import photo from './photo.jpg';
+import photo from './photo.avif';
 import github from './github.png';
 import lkn from './lkn.png';
 import oc from './oc.png';

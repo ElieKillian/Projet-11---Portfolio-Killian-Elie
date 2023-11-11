@@ -12,7 +12,7 @@
         ],
         "github" : "https://github.com/ElieKillian/site-Riding-Citites",
         "website" : "https://eliekillian.github.io/site-Riding-Citites/",
-        "image" :  "./projets/projet1.png",
+        "image" :  "./projets/projet1.avif",
         "skills" : [ 
             "./icones/html.webp"
         ]
@@ -32,7 +32,7 @@
         ],
         "github" : "https://github.com/ElieKillian/Projet-3",
         "website" : "https://killianelie-booki.netlify.app/",
-        "image" : "./projets/projet2.png",
+        "image" : "./projets/projet2.avif",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp"
@@ -53,7 +53,7 @@
         ],
         "github" : "https://github.com/ElieKillian/Projet-4",
         "website" : "https://eliekillian.github.io/Projet-4/",
-        "image" : "./projets/projet3.png",
+        "image" : "./projets/projet3.avif",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -73,7 +73,7 @@
         ],
         "github" : "https://github.com/ElieKillian/Projet-5---Print-It-JS",
         "website" : "https://eliekillian.github.io/Projet-5---Print-It-JS/",
-        "image" : "./projets/projet4.png",
+        "image" : "./projets/projet4.avif",
         "skills" : [ 
             "./icones/javascript.webp",
             "./icones/github.png"
@@ -94,7 +94,7 @@
             "Ajouter la possibilité pour l'administrateur de modifier sa galerie photo à sa guise, via une modale"
         ],
         "github" : "https://github.com/ElieKillian/Projet-6",
-        "image" : "./projets/projet5.png",
+        "image" : "./projets/projet5.avif",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -120,7 +120,7 @@
         ],
         "github" : "https://github.com/ElieKillian/Projet-8",
         "website" : "https://killianelie-kasa.netlify.app/",
-        "image" : "./projets/projet6.png",
+        "image" : "./projets/projet6.avif",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -145,7 +145,7 @@
         ],
         "github" : "https://github.com/ElieKillian/Projet-9",
         "website" : "https://eliekillian.github.io/Projet-9/",
-        "image" : "./projets/projet7.webp",
+        "image" : "./projets/projet7.avif",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
@@ -170,7 +170,7 @@
         ],
         "github" : "https://github.com/ElieKillian/Projet-10",
         "website" : "https://killianelie-77events.netlify.app/",
-        "image" : "./projets/projet8.png",
+        "image" : "./projets/projet8.avif",
         "skills" : [ 
             "./icones/html.webp",
             "./icones/css.webp",
